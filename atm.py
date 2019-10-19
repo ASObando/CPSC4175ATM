@@ -66,4 +66,11 @@ class AT_MachineRefill:
         self.previousBalance = previousBalance
         
 class AT_Machine:
-    def __init__(self, AT_MachineUID, currentBalance, location, minimumBalance, status, lastRefillDate, 
+    def __init__(self, AT_MachineUID, currentBalance, location, minimumBalance, status, lastRefillDate, nextMaintenanceDate)
+        self.AT_MachineUID = AT_MachineUID
+        self.currentBalance = currentBalance
+        self.location = location
+        self.minimumBalance = minimumBalance
+        self.status = status
+        self.lastRefillDate = lastRefillDate
+        self.nextMaintenanceDate = nextMaintenanceDate
