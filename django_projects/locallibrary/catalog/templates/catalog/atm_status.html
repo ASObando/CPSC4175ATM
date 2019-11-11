@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>ATM Status</h1>
+
+    {% if atm_list %}
+    <ul>
+		{% for atm in atm_list %}
+			<p>ATM UID: {{atm.ATM_UID}}</p>
+		{% endfor %}
+	  </li>
+    </ul>     
+	{% endif %}
+{% endblock %}

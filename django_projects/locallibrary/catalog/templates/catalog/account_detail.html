@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Account Information</h1>
+
+    {% if account_list %}
+    <ul>
+		{% for account in account_list %}
+			<p>Phone Number: {{account.phoneNumber}}</p>
+			<a href="">Change Phone Number</a>
+		{% endfor %}
+	  </li>
+    </ul>     
+	{% endif %}
+{% endblock %}
